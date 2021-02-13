@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> TECHNICAL DOCUMENTATION PAGE </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: #121212;
+                    color: #FFFFFF;
+                }
+            }
+            body {
+                    font-family: Century Gothic, Tahoma, sans-serif;
+                    font-weight: normal;
+                    font-style: normal;
+                    background-color: #121212;
+                    color: #FFFFFF;
+                }
+            #main-doc {
+                border: 10px transparent;
+            }
+            .main-section {
+                border: 1px transparent;
+                margin: 10px 10px 10px 10px;
+                
+            }
+            .code-container {
+                background-color: #000000;
+                margin: 10px 10px 10px 10px;
+                font-size: 12pt;
+            }
+            .code-container code {
+                color: #FFFFFF;
+                padding: 10px 10px 10px 10px;
+                text-align: left;
+            }
+            
+            #what_is_java {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #what_is_java header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            
+            #why_use_java {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #why_use_java header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            
+            #java_install {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #java_install header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+
+            #setup_for_windows {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #setup_for_windows header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            
+            #java_quickstart {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #java_quickstart header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            #java_quickstart .container {
+                border: 1px transparent;
+                margin: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+                background-color: #282828;
+            }
+            #java_quickstart .content {
+                background-color: #404040;
+                color: #FFFFFF;
+                font-family: arial, serif;
+                font-size: 12pt;
+            }
+            
+            #java_syntax {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #java_syntax header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            #java_syntax .container {
+                border: 1px transparent;
+                margin: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+                background-color: #282828;
+            }
+            #java_syntax .content {
+                background-color: #404040;
+                color: #FFFFFF;
+                font-family: arial, serif;
+                font-size: 12pt;
+            }
+            
+            #the_main_method {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #the_main_method header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            #the_main_method .container {
+                border: 1px transparent;
+                margin: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+                background-color: #282828;
+            }
+            #the_main_method .content {
+                background-color: #404040;
+                color: #FFFFFF;
+                font-family: arial, serif;
+                font-size: 12pt;
+            }
+            
+            #system_out_println {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #system_out_println header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            #system_out_println .container {
+                border: 1px transparent;
+                margin: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+                background-color: #282828;
+            }
+            #system_out_println .content {
+                background-color: #404040;
+                color: #FFFFFF;
+                font-family: arial, serif;
+                font-size: 12pt;
+            }
+            
+            #java_comments {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #java_comments h1 {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+            }
+            #java_comments header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            #java_comments .container {
+                border: 1px transparent;
+                margin: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+                background-color: #282828;
+            }
+            #java_comments .content {
+                background-color: #404040;
+                color: #FFFFFF;
+                font-family: arial, serif;
+                font-size: 12pt;
+            }
+            
+            #java_multiline_comments {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #java_multiline_comments h1 {
+                font-family: century gothic, tahoma, sans-serif;
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+            }
+            #java_multiline_comments header {
+                font-weight: bold;
+                font-style: normal;
+                color: #FFFFFF;
+                font-size: 16pt;
+            }
+            #java_multiline_comments .container {
+                border: 1px transparent;
+                margin: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+                background-color: #282828;
+            }
+            #java_multiline_comments .content {
+                background-color: #404040;
+                color: #FFFFFF;
+                font-family: arial, serif;
+                font-size: 12pt;
+            }
+            
+            a {
+                text-decoration: underline;
+                color: #FFFFFF;
+            }
+            
+            #navbar {
+                font-family: Century Gothic, Tahoma, sans-serif;
+                font-size: 12pt;
+                font-weight: normal;
+                font-style: normal;
+            }
+            #navbar ul {
+                list-style-type: none;
+                margin: 0px 0px 0px 0px;
+                padding: 0;
+                width: 20%;
+                background-color: #282828;
+                position: fixed;
+                height: 100%;
+                overflow: auto;
+            }
+            .nav-link {
+                display: block;
+                color: #000000;
+                padding: 10px 10px 10px 10px;
+                text-decoration: none;
+                background-color: #121212;
+                color: white;
+            }
+            .nav-link:hover {
+                background-color: #B3B3B3;
+                color: #000000;
+            }
+            .nav-title {
+                font-size: 20pt;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: #404040;
+                padding: 10px 0px 10px 0px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id="navbar">
+            <ul>
+                <li> <header class="nav-title"> Java </header> </li>
+                <li> <a class="nav-link" href="#what_is_java"> What is Java? </a> </li>
+                <li> <a class="nav-link" href="#why_use_java"> Why Use Java? </a> </li>
+                <li> <a class="nav-link" href="#java_install"> Java Install </a> </li>
+                <li> <a class="nav-link" href="#setup_for_windows"> Setup for Windows </a> </li>
+                <li> <a class="nav-link" href="#java_quickstart"> Java Quickstart </a> </li>
+                <li> <a class="nav-link" href="#java_syntax"> Java Syntax </a> </li>
+                <li> <a class="nav-link" href="#the_main_method"> The main Method </a> </li>
+                <li> <a class="nav-link" href="#system_out_println"> System.out.println() </a> </li>
+                <li> <a class="nav-link" href="#java_comments"> Java Comments </a> </li>
+                <li> <a class="nav-link" href="#java_multiline_comments"> Java Multi-line Comments </a> </li>
+            </ul>
+        </div>
+        
+        <div style="margin-left:21%; padding:0px 0px 0px 0px; height:1000px;">
+        <!-- Start of Main -->
+        <main id="main-doc">
+            <!-- Start of Java Introduction -->
+            <section id="what_is_java" class="main-section">
+                <!-- Start of What is Java -->
+                <header> What is Java? </header> <!-- Title -->
+                <!-- Contents -->
+                <p> Java is a popular programming language, created in 1995. It is owned by Oracle, and more than 3 billion devices run Java. </p>
+                <p> It is used for: </p>
+                    <ul>
+                        <li> Mobile applications (specially Android apps) </li>
+                        <li> Desktop applications </li>
+                        <li> Web applications </li>
+                        <li> Web servers and application servers </li>
+                        <li> Games </li>
+                        <li> Database connection </li>
+                        <li> And much, much more! </li>
+                    </ul>
+                <!-- End of What is Java -->
+            </section>
+            <!-- End of Java Introduction -->
+            
+            <!-- Start of Why Use Java -->
+            <section id="why_use_java" class="main-section">
+                <header> Why Use Java? </header> <!-- Title -->
+                <!-- Contents -->
+                <ul>
+                    <li> Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.) </li>
+                    <li> It is one of the most popular programming language in the world </li>
+                    <li> It is easy to learn and simple to use </li>
+                    <li> It is open-source and free </li>
+                    <li> It is secure, fast and powerful </li>
+                    <li> It has a huge community support (tens of millions of developers) </li>
+                    <li> Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs </li>
+                    <li> As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa </li>
+                </ul>
+            </section>
+            <!-- End of Why Use Java -->
+            
+            <!-- Start of Java Introduction -->
+            <section id="java_install" class="main-section">
+                <!-- Start of Java Install -->
+                <header> Java Install </header> <!-- Title -->
+                <!-- Start of Java Contents -->
+                <p> Some PCs might have Java already installed. </p>
+                <p> To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe): </p>
+               <!-- Code -->
+                <div class="code-container">
+                    <code> C:\Users\Your Name>java -version </code> 
+                </div>
+                <p> If Java is installed, you will see something like this (depending on version): </p>
+                <div class="code-container">
+                    <code> java version "11.0.1" 2018-10-16 LTS </code> <br/>
+                    <code> Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS) </code> <br/>
+                    <code> Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode) </code>
+                </div>
+                <p> If you do not have Java installed on your computer, you can download it for free at <a href="https://www.oracle.com/technetwork/java/javase/overview/index.html">oracle.com</a>. </p>
+                <p> Note: In this tutorial, we will write Java code in a text editor. However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files. </p>
+                <!-- End of Java Install -->
+            </section>
+            <!-- End of Java Introduction -->
+            
+            <!-- Start of Setup for Windows -->
+            <section id="setup_for_windows" class="main-section">
+                <header> Setup for Windows </header> <!--Title -->
+                <!-- Contents -->
+                <p> To install Java on Windows: </p>
+                <ol>
+                    <li> Go to "System Properties" (Can be found on Control Panel > System and Security > System > Advanced System Settings) </li>
+                    <li> Click on the "Environment variables" button under the "Advanced" tab </li>
+                    <li> Then, select the "Path" variable in System variables and click on the "Edit" button </li>
+                    <li> Click on the "New" button and add the path where Java is installed, followed by <strong>\bin</strong>. By default, Java is installed in C:\Program Files\Java\jdk-11.0.1 (If nothing else was specified when you installed it). In that case, You will have to add a new path with: <strong>C:\Program Files\Java\jdk-11.0.1\bin</strong> Then, click "OK", and save the settings </li>
+                    <li> At last, open Command Prompt (cmd.exe) and type <strong>java -version</strong> to see if Java is running on your machine </li>
+                </ol>
+            </section>
+            <!-- End of Setup for Windows -->
+            
+            <!-- Start of Java Quickstart -->
+            <section id="java_quickstart" class="main-section">
+                <!-- Title -->
+                <header> Java Quickstart </header> 
+                <!-- Start of Java Quickstart Contents -->
+                <p> In Java, every application begins with a class name, and that class must match the filename.  </p>
+                <p> Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad). </p>
+                <p> The file should contain a "Hello World" message, which is written with the following code: </p>
+                <div class="container"> 
+                    <p> Main.java </p>
+                    <div class="content">
+                        <pre> 
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+                        </pre>
+                    </div>
+                </div>
+                <p> Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on <strong>how</strong> to run the code above. </p>
+                <p> Save the code in Notepad as "Main.java". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file, and type "javac Main.java": </p>
+                <div class="code-container">
+                    <code> C:\Users\Your Name>javac Main.java </code>
+                </div>
+                <p> This will compile your code. If there are no errors in the code, the command prompt will take you to the next line. Now, type "java Main" to run the file: </p>
+                <div class="code-container">
+                    <code> C:\Users\Your Name>java Main </code>
+                </div>
+                <p> The output should read: </p>
+                <div class="code-container">
+                    <code> Hello World </code>
+                </div>
+                <p> <strong>Congratulations!</strong> You have written and executed your first Java program. </p>
+                <!-- End of Java Quickstart Contents -->
+            </section>
+            <!-- End of Java Quickstart -->
+            
+            <!-- Start of Java Syntax -->
+            <section id="java_syntax" class="main-section">
+                <header> Java Syntax </header>
+                <p> In the previous chapter, we created a Java file called Main.java, and we used the following code to print "Hello World" to the screen: </p>
+                <div class="container">
+                    <p> MyClass.java </p>
+                    <div class="content">
+                    <pre>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+} 
+                    </pre>
+                    </div>
+                </div>
+                <p> Example explained </p>
+                <p> Every line of code that runs in Java must be inside a <code style="font-size: 12pt; color: orange;">class</code>. In our example, we named the class <strong>Main</strong>. A class should always start with an uppercase first letter. </p>
+                <p> <strong>Note:</strong> Java is case-sensitive: "MyClass" and "myclass" has different meaning. </p>
+                <p> The name of the java file <strong>must match</strong> the class name. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed: Go to the Get Started Chapter for how to install Java. The output should be: </p>
+                <div class="code-container">
+                    <code> Hello World </code>
+                </div>
+            </section>
+            <!-- End of Java Syntax -->
+            
+            <!-- Start of The main Method -->
+            <section id="the_main_method" class="main-section">
+                <header> The main Method </header>
+                <p> The <code style="font-size: 12pt; color: orange;">main()</code> method is required and you will see it in every Java program: </p>
+                <div class="container">
+                    <div class="content">
+                    <pre> 
+public static void main(String[] args) 
+                    </pre>
+                    </div>
+                </div>
+                <p> Any code inside the <code style="font-size: 12pt; color: orange;">main()</code> method will be executed. You don't have to understand the keywords before and after main. You will get to know them bit by bit while reading this tutorial. </p>
+                <p> For now, just remember that every Java program has a <code style="font-size: 12pt; color: orange;">class</code> name which must match the filename, and that every program must contain the <code style="font-size: 12pt; color: orange;">main()</code> method. </p>
+            </section>
+            <!-- End of The main Method -->
+            
+            <!-- Start of System.out.println() -->
+            <section id="system_out_println" class="main-section">
+                <header> System.out.println() </header>
+                <p> Inside the <code style="font-size: 12pt; color: orange;">main()</code> method, we can use the <code style="font-size: 12pt; color: orange;">println()</code> method to print a line of text to the screen: </p>
+                <div class="container">
+                    <div class="content">
+                        <pre> 
+public static void main(String[] args) {
+    System.out.println("Hello World");
+} 
+                        </pre>
+                    </div>
+                </div>
+                <p> <strong>Note:</strong> The curly braces <code style="font-size: 12pt; color: orange;">{}</code> marks the beginning and the end of a block of code. </p>
+                <p> <strong>Note:</strong> Each code statement must end with a semicolon. </p>
+            </section>
+            <!-- End of System.out.println() -->
+            
+            <!-- Start of Java Comments -->
+            <section id="java_comments" class="main-section">
+                <header> Java Comments </header>
+                <p> Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code. </p>
+                <p> Single-line comments start with two forward slashes (<code style="font-size: 12pt; color: orange;">//</code>). </p>
+                <p> Any text between <code style="font-size: 12pt; color: orange;">//</code> and the end of the line is ignored by Java (will not be executed). </p>
+                <p> This example uses a single-line comment before a line of code: </p>
+                <div class="container">
+                    <div class="content">
+                        <pre>
+<span style="color: gray;">// This is a comment </span>
+System.out.println("Hello World");                            
+                        </pre>
+                    </div>
+                </div>
+                <p> This example uses a single-line comment at the end of a line of code: </p>
+                <div class="container">
+                    <div class="content">
+                        <pre>
+
+System.out.println("Hello World"); <span style="color: gray;">// This is a comment </span>                   
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Java Comments -->
+            
+            <!-- Start of Java Multi-line Comments -->
+            <section id="java_multiline_comments" class="main-section">
+                <header> Java Multi-line Comments </header>
+                <p> Multi-line comments start with <code style="font-size: 12pt; color: orange;">/*</code> and ends with <code style="font-size: 12pt; color: orange;">*/</code>. </p>
+                <p> Any text between <code style="font-size: 12pt; color: orange;">/*</code> and <code style="font-size: 12pt; color: orange;">*/</code> will be ignored by Java. </p>
+                <p> This example uses a multi-line comment (a comment block) to explain the code: </p>
+                <div class="container">
+                    <p>Example</p>
+                    <div class="content">
+                        <pre>
+<span style="color: gray;">/* The code below will print the words Hello World</span>
+<span style="color: gray;">to the screen, and it is amazing */</span>
+System.out.println("Hello World");
+                        </pre>
+                    </div>
+                </div>
+                <p> Single or multi-line comments? </p>
+                <p> It is up to you which you want to use. Normally, we use <code style="font-size: 12pt; color: orange;">//</code> for short comments, and <code style="font-size: 12pt; color: orange;">/* */</code> for longer. </p>
+            </section>
+            <!-- End of Java Multi-line Comments -->
+        </main>
+        <!-- End of Main -->
+        </div>
+    </body>
+</html>
